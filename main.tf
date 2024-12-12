@@ -14,7 +14,7 @@ resource "aws_security_group" "poc-sg" {
 }
 
 resource "aws_instance" "poc-vm" {
-  ami = "ami-09e67e426f25ce0d7"
+  ami = "ami-0453ec754f44f9a4a"
   instance_type = "t1.micro"
   vpc_security_group_ids = ["${aws_security_group.poc-sg.id}"]
   key_name = "TRAINING"
